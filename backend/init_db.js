@@ -1,6 +1,6 @@
 require('dotenv').config();
 const { Pool } = require('pg');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 async function initDB() {
   // Directly connect using DATABASE_URL (Render DB already exists)
