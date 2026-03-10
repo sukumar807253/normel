@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.log
+dist/
+uploads/
+output.txt
+fix_admin.js
