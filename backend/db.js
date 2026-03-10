@@ -5,7 +5,7 @@ const pool = new Pool(
   process.env.DATABASE_URL
     ? {
         connectionString: process.env.DATABASE_URL,
-        ssl: false, // Set to { rejectUnauthorized: false } if using SSL on server
+        ssl: { rejectUnauthorized: false }, // Required for Render PostgreSQL
       }
     : {
         user: process.env.DB_USER || 'postgres',
